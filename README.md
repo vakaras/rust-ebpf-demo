@@ -19,6 +19,11 @@ I built and ran this code on Ubuntu 18.04.1 with LLVM 7
 (the setup steps I went through to get the LLVM libraries are included as part
 of https://github.com/iovisor/bcc/issues/1964).
 
+Use Rust version 2018-09-01:
+```sh
+rustup override set nightly-2018-09-01
+```
+
 First, use the LLVM toolchain to compile the Rust code to LLVM bytecode,
 and then to BPF bytecode using the shell script from the blog post:
 
